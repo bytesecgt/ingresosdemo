@@ -9,9 +9,9 @@ import { RolecreateComponent } from '../admin/roles/rolecreate/rolecreate.compon
 const routes: Routes = [{
   path:'',component:HomeComponent,
   children:[
-    {path:'admin/permisos',component: PermisosindexComponent},
+    {path:'admin/permisos',title:"Permisos", component: PermisosindexComponent},
     {path:'admin/permisos/nuevo',component:PermisoscreateComponent},
-    {path:'admin/role', component: RoleindexComponent},
+    {path:'admin/role', title:"Roles",component: RoleindexComponent},
     {path:'admin/role/nuevo', component: RolecreateComponent}
   ]
 }];
